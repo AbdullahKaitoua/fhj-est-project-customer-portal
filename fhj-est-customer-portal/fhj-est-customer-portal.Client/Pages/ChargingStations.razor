@@ -1,0 +1,13 @@
+﻿@page "/chargingstations"
+@using Microsoft.AspNetCore.Authorization
+
+@attribute [Authorize]
+@rendermode InteractiveAuto
+
+<PageTitle>ChargingStations</PageTitle>
+
+
+<AuthorizeView>
+    <h3>Charging Stations of @context.User.Identity?.Name!</h3>
+</AuthorizeView>
+

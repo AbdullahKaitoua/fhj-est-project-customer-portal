@@ -4,10 +4,14 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>aspnet-fhj-est-customer-portal-45cdaab1-7226-4472-b63d-c90abe81b656</UserSecretsId>
+    <UserSecretsId>aspnet-fhj-est-customer-portal-7279bcdb-e207-4ba3-801c-7245adaa3439</UserSecretsId>
     <RootNamespace>fhj-est-customer-portal</RootNamespace>
     <AssemblyName>$(AssemblyName.Replace(' ', '_'))</AssemblyName>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Components\Pages\Component.razor" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\fhj-est-customer-portal.Client\fhj-est-customer-portal.Client.csproj" />
